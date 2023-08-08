@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](http://choosealicense.com/licenses/mit/)
 
 ## Description
-A back end application for my e-commerce website built using sequelize, mysql, dottenv and express. Express serves API routes to perform RESTful CRUD operations.
+A back end application for an e-commerce website built using sequelize, mysql, dottenv and express. Express serves API routes to perform RESTful CRUD operations.
 
 ## Table of Contents
  - [Installation](#installation)
