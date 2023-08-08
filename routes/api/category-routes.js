@@ -6,7 +6,6 @@ const { Category, Product } = require('../../models');
 router.get('/', async (req, res) => {
   try {
     const categoryData = await Category.findAll({
-      // Add Book as a second model to JOIN with
       include: [{ all: true, nested: true }],
     });
     res.status(200).json(categoryData);
@@ -15,9 +14,17 @@ router.get('/', async (req, res) => {
   }
 });
 
-router.get('/:id', (req, res) => {
+router.get('/:id', async (req, res) => {
   // find one category by its `id` value
   // be sure to include its associated Products
+  try {
+    const categoryData = await Category.findOne({ where: { id: req.params.id },
+      include: [{ all: true, nested: true }],
+    });
+    res.status(200).json(categoryData);
+  } catch (err) {
+    res.status(500).json(err);
+  }
 });
 
 router.post('/', (req, res) => {
