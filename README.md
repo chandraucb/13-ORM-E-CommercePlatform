@@ -15,6 +15,9 @@ A back end application for an e-commerce website built using sequelize, mysql, d
 ## Installation
 Clone the github repo as shown below, <br/><br/> ``` git clone git@github.com:chandraucb/13-ORM-E-CommercePlatform.git ``` <br/><br/> Run node package install <br/><br/> ``` npm install ``` <br/><br/> Execute schema.sql to generate schema within mysql database <br/><br/> Update .env with database configuration. <br/><br/> Execute command to generated seed data <br/><br/> ```node seeds/index.js ```
 
+![videodemo](./Assets/db-install-video-demo.gif) 
+
+
 ## Usage
 To start this application execute below command and follow the prompts <br/><br/> ```npm start ``` <br/> <br/> ![videodemo](./Assets/video-demo.gif) 
 
